@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define BLPATH		"/sys/class/leds/smc::kbd_backlight"
+#define BLPATH		"/sys/class/backlight/intel_backlight"
 #define BLVALFILE	BLPATH "/brightness"
 #define BLMAXFILE	BLPATH "/max_brightness"
 #define BLCHANGE	16
 
 void usage() {
-    printf("Usage: kbdlight [up [<percentage>]|down [<percentage>]|off|max|get|set <value>]\n");
+    printf("Usage: dsplight [up [<percentage>]|down [<percentage>]|off|max|get|set <value>]\n");
     exit(0);
 }
 

@@ -1,7 +1,7 @@
 PREFIX = /usr/local
 
-obj = kbdlight.o
-bin = kbdlight
+obj = dsplight.o
+bin = dsplight
 
 $(bin): $(obj)
 	$(CC) -o $@ $(obj) $(LDFLAGS)
